@@ -1,0 +1,765 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B30AF3B2A8284CB00001C9C /* TestTradeInitial.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B30AF3A2A8284CB00001C9C /* TestTradeInitial.json */; };
+		9B30AF3D2A8285F400001C9C /* TestTradeInsert.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B30AF3C2A8285F300001C9C /* TestTradeInsert.json */; };
+		9B3A925C2A81C6210073D8B0 /* TestTradeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3A925B2A81C6210073D8B0 /* TestTradeDataManager.swift */; };
+		9B3A925E2A81CBA50073D8B0 /* RecentTradeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3A925D2A81CBA50073D8B0 /* RecentTradeViewModel.swift */; };
+		9B3A92602A81CC240073D8B0 /* RecentTradCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3A925F2A81CC240073D8B0 /* RecentTradCollectionViewCell.swift */; };
+		9B6498AA2A814091000CD3A5 /* TestOrderBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6498A92A814091000CD3A5 /* TestOrderBookViewModel.swift */; };
+		9B6C0EF12A82669B00330E9E /* RecentTrade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6C0EF02A82669A00330E9E /* RecentTrade.swift */; };
+		9B6C0EF72A82801500330E9E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6C0EF62A82801500330E9E /* DataManager.swift */; };
+		9B867B1D2A82FDEA005077F1 /* testOrderbook.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B867B1C2A82FDEA005077F1 /* testOrderbook.json */; };
+		9B9B3A5E2A7A82410090F182 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9B3A5D2A7A82410090F182 /* AppDelegate.swift */; };
+		9B9B3A602A7A82410090F182 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9B3A5F2A7A82410090F182 /* SceneDelegate.swift */; };
+		9B9B3A622A7A82410090F182 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9B3A612A7A82410090F182 /* ViewController.swift */; };
+		9B9B3A652A7A82410090F182 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9B3A632A7A82410090F182 /* Main.storyboard */; };
+		9B9B3A672A7A82460090F182 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B9B3A662A7A82460090F182 /* Assets.xcassets */; };
+		9B9B3A6A2A7A82460090F182 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9B3A682A7A82460090F182 /* LaunchScreen.storyboard */; };
+		9B9B3A752A7A82460090F182 /* PrestoLabsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9B3A742A7A82460090F182 /* PrestoLabsTests.swift */; };
+		9B9B3A7F2A7A82460090F182 /* PrestoLabsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9B3A7E2A7A82460090F182 /* PrestoLabsUITests.swift */; };
+		9B9B3A812A7A82460090F182 /* PrestoLabsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9B3A802A7A82460090F182 /* PrestoLabsUITestsLaunchTests.swift */; };
+		9B9B3A8F2A7A86A00090F182 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 9B9B3A8E2A7A86A00090F182 /* Starscream */; };
+		9B9B3A922A7A86C70090F182 /* WebSocketConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9B3A912A7A86C70090F182 /* WebSocketConnection.swift */; };
+		9B9B3A9A2A7C47230090F182 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9B3A992A7C47230090F182 /* Constants.swift */; };
+		9B9B3A9C2A7C4FCE0090F182 /* TestWebSocketConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9B3A9B2A7C4FCE0090F182 /* TestWebSocketConnection.swift */; };
+		9B9B3AA12A7D749E0090F182 /* OrderBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9B3AA02A7D749E0090F182 /* OrderBookViewController.swift */; };
+		9B9B3AA32A7D74D60090F182 /* RecentTradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9B3AA22A7D74D60090F182 /* RecentTradeViewController.swift */; };
+		9B9B3AA62A7FBFF70090F182 /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 9B9B3AA52A7FBFF70090F182 /* ProgressHUD */; };
+		9B9B3AA82A7FC01D0090F182 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9B3AA72A7FC01D0090F182 /* AppViewController.swift */; };
+		9B9B3AAB2A7FF1030090F182 /* OrderBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9B3AAA2A7FF1030090F182 /* OrderBook.swift */; };
+		9B9B3AAD2A7FFA4A0090F182 /* OrderBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9B3AAC2A7FFA4A0090F182 /* OrderBookViewModel.swift */; };
+		9B9B3AAF2A8024E40090F182 /* OrderBookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9B3AAE2A8024E40090F182 /* OrderBookCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9B9B3A712A7A82460090F182 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B9B3A522A7A82410090F182 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B9B3A592A7A82410090F182;
+			remoteInfo = PrestoLabs;
+		};
+		9B9B3A7B2A7A82460090F182 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B9B3A522A7A82410090F182 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B9B3A592A7A82410090F182;
+			remoteInfo = PrestoLabs;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9B30AF3A2A8284CB00001C9C /* TestTradeInitial.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestTradeInitial.json; sourceTree = "<group>"; };
+		9B30AF3C2A8285F300001C9C /* TestTradeInsert.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestTradeInsert.json; sourceTree = "<group>"; };
+		9B3A925B2A81C6210073D8B0 /* TestTradeDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTradeDataManager.swift; sourceTree = "<group>"; };
+		9B3A925D2A81CBA50073D8B0 /* RecentTradeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTradeViewModel.swift; sourceTree = "<group>"; };
+		9B3A925F2A81CC240073D8B0 /* RecentTradCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTradCollectionViewCell.swift; sourceTree = "<group>"; };
+		9B6498A92A814091000CD3A5 /* TestOrderBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestOrderBookViewModel.swift; sourceTree = "<group>"; };
+		9B6C0EF02A82669A00330E9E /* RecentTrade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTrade.swift; sourceTree = "<group>"; };
+		9B6C0EF62A82801500330E9E /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		9B867B1C2A82FDEA005077F1 /* testOrderbook.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testOrderbook.json; sourceTree = "<group>"; };
+		9B9B3A5A2A7A82410090F182 /* PrestoLabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrestoLabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B9B3A5D2A7A82410090F182 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9B9B3A5F2A7A82410090F182 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9B9B3A612A7A82410090F182 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9B9B3A642A7A82410090F182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B9B3A662A7A82460090F182 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B9B3A692A7A82460090F182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9B9B3A6B2A7A82460090F182 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B9B3A702A7A82460090F182 /* PrestoLabsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrestoLabsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B9B3A742A7A82460090F182 /* PrestoLabsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrestoLabsTests.swift; sourceTree = "<group>"; };
+		9B9B3A7A2A7A82460090F182 /* PrestoLabsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrestoLabsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B9B3A7E2A7A82460090F182 /* PrestoLabsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrestoLabsUITests.swift; sourceTree = "<group>"; };
+		9B9B3A802A7A82460090F182 /* PrestoLabsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrestoLabsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9B9B3A912A7A86C70090F182 /* WebSocketConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketConnection.swift; sourceTree = "<group>"; };
+		9B9B3A992A7C47230090F182 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9B9B3A9B2A7C4FCE0090F182 /* TestWebSocketConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestWebSocketConnection.swift; sourceTree = "<group>"; };
+		9B9B3AA02A7D749E0090F182 /* OrderBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBookViewController.swift; sourceTree = "<group>"; };
+		9B9B3AA22A7D74D60090F182 /* RecentTradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTradeViewController.swift; sourceTree = "<group>"; };
+		9B9B3AA72A7FC01D0090F182 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
+		9B9B3AAA2A7FF1030090F182 /* OrderBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBook.swift; sourceTree = "<group>"; };
+		9B9B3AAC2A7FFA4A0090F182 /* OrderBookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBookViewModel.swift; sourceTree = "<group>"; };
+		9B9B3AAE2A8024E40090F182 /* OrderBookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBookCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B9B3A572A7A82410090F182 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B9B3A8F2A7A86A00090F182 /* Starscream in Frameworks */,
+				9B9B3AA62A7FBFF70090F182 /* ProgressHUD in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B9B3A6D2A7A82460090F182 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B9B3A772A7A82460090F182 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9B9B3A512A7A82410090F182 = {
+			isa = PBXGroup;
+			children = (
+				9B9B3A5C2A7A82410090F182 /* PrestoLabs */,
+				9B9B3A732A7A82460090F182 /* PrestoLabsTests */,
+				9B9B3A7D2A7A82460090F182 /* PrestoLabsUITests */,
+				9B9B3A5B2A7A82410090F182 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9B9B3A5B2A7A82410090F182 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B9B3A5A2A7A82410090F182 /* PrestoLabs.app */,
+				9B9B3A702A7A82460090F182 /* PrestoLabsTests.xctest */,
+				9B9B3A7A2A7A82460090F182 /* PrestoLabsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B9B3A5C2A7A82410090F182 /* PrestoLabs */ = {
+			isa = PBXGroup;
+			children = (
+				9B9B3AA92A7FF0F40090F182 /* Models */,
+				9B9B3A9F2A7C72750090F182 /* Controllers */,
+				9B9B3A9E2A7C725B0090F182 /* ViewModels */,
+				9B9B3A9D2A7C72540090F182 /* Views */,
+				9B9B3A982A7C46B50090F182 /* Common */,
+				9B9B3A902A7A86AC0090F182 /* Networking */,
+				9B9B3A5D2A7A82410090F182 /* AppDelegate.swift */,
+				9B9B3A5F2A7A82410090F182 /* SceneDelegate.swift */,
+				9B9B3A632A7A82410090F182 /* Main.storyboard */,
+				9B9B3A662A7A82460090F182 /* Assets.xcassets */,
+				9B9B3A682A7A82460090F182 /* LaunchScreen.storyboard */,
+				9B9B3A6B2A7A82460090F182 /* Info.plist */,
+			);
+			path = PrestoLabs;
+			sourceTree = "<group>";
+		};
+		9B9B3A732A7A82460090F182 /* PrestoLabsTests */ = {
+			isa = PBXGroup;
+			children = (
+				9B867B1C2A82FDEA005077F1 /* testOrderbook.json */,
+				9B30AF3C2A8285F300001C9C /* TestTradeInsert.json */,
+				9B30AF3A2A8284CB00001C9C /* TestTradeInitial.json */,
+				9B9B3A9B2A7C4FCE0090F182 /* TestWebSocketConnection.swift */,
+				9B6498A92A814091000CD3A5 /* TestOrderBookViewModel.swift */,
+				9B9B3A742A7A82460090F182 /* PrestoLabsTests.swift */,
+				9B3A925B2A81C6210073D8B0 /* TestTradeDataManager.swift */,
+			);
+			path = PrestoLabsTests;
+			sourceTree = "<group>";
+		};
+		9B9B3A7D2A7A82460090F182 /* PrestoLabsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9B9B3A7E2A7A82460090F182 /* PrestoLabsUITests.swift */,
+				9B9B3A802A7A82460090F182 /* PrestoLabsUITestsLaunchTests.swift */,
+			);
+			path = PrestoLabsUITests;
+			sourceTree = "<group>";
+		};
+		9B9B3A902A7A86AC0090F182 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9B9B3A912A7A86C70090F182 /* WebSocketConnection.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		9B9B3A982A7C46B50090F182 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9B9B3A992A7C47230090F182 /* Constants.swift */,
+				9B6C0EF62A82801500330E9E /* DataManager.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9B9B3A9D2A7C72540090F182 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9B9B3AAE2A8024E40090F182 /* OrderBookCell.swift */,
+				9B3A925F2A81CC240073D8B0 /* RecentTradCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9B9B3A9E2A7C725B0090F182 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9B9B3AAC2A7FFA4A0090F182 /* OrderBookViewModel.swift */,
+				9B3A925D2A81CBA50073D8B0 /* RecentTradeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9B9B3A9F2A7C72750090F182 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9B9B3A612A7A82410090F182 /* ViewController.swift */,
+				9B9B3AA02A7D749E0090F182 /* OrderBookViewController.swift */,
+				9B9B3AA22A7D74D60090F182 /* RecentTradeViewController.swift */,
+				9B9B3AA72A7FC01D0090F182 /* AppViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9B9B3AA92A7FF0F40090F182 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9B9B3AAA2A7FF1030090F182 /* OrderBook.swift */,
+				9B6C0EF02A82669A00330E9E /* RecentTrade.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B9B3A592A7A82410090F182 /* PrestoLabs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B9B3A842A7A82460090F182 /* Build configuration list for PBXNativeTarget "PrestoLabs" */;
+			buildPhases = (
+				9B9B3A562A7A82410090F182 /* Sources */,
+				9B9B3A572A7A82410090F182 /* Frameworks */,
+				9B9B3A582A7A82410090F182 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrestoLabs;
+			packageProductDependencies = (
+				9B9B3A8E2A7A86A00090F182 /* Starscream */,
+				9B9B3AA52A7FBFF70090F182 /* ProgressHUD */,
+			);
+			productName = PrestoLabs;
+			productReference = 9B9B3A5A2A7A82410090F182 /* PrestoLabs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9B9B3A6F2A7A82460090F182 /* PrestoLabsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B9B3A872A7A82460090F182 /* Build configuration list for PBXNativeTarget "PrestoLabsTests" */;
+			buildPhases = (
+				9B9B3A6C2A7A82460090F182 /* Sources */,
+				9B9B3A6D2A7A82460090F182 /* Frameworks */,
+				9B9B3A6E2A7A82460090F182 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B9B3A722A7A82460090F182 /* PBXTargetDependency */,
+			);
+			name = PrestoLabsTests;
+			productName = PrestoLabsTests;
+			productReference = 9B9B3A702A7A82460090F182 /* PrestoLabsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9B9B3A792A7A82460090F182 /* PrestoLabsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B9B3A8A2A7A82460090F182 /* Build configuration list for PBXNativeTarget "PrestoLabsUITests" */;
+			buildPhases = (
+				9B9B3A762A7A82460090F182 /* Sources */,
+				9B9B3A772A7A82460090F182 /* Frameworks */,
+				9B9B3A782A7A82460090F182 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B9B3A7C2A7A82460090F182 /* PBXTargetDependency */,
+			);
+			name = PrestoLabsUITests;
+			productName = PrestoLabsUITests;
+			productReference = 9B9B3A7A2A7A82460090F182 /* PrestoLabsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B9B3A522A7A82410090F182 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					9B9B3A592A7A82410090F182 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					9B9B3A6F2A7A82460090F182 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 9B9B3A592A7A82410090F182;
+					};
+					9B9B3A792A7A82460090F182 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 9B9B3A592A7A82410090F182;
+					};
+				};
+			};
+			buildConfigurationList = 9B9B3A552A7A82410090F182 /* Build configuration list for PBXProject "PrestoLabs" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B9B3A512A7A82410090F182;
+			packageReferences = (
+				9B9B3A8D2A7A86A00090F182 /* XCRemoteSwiftPackageReference "Starscream" */,
+				9B9B3AA42A7FBFF70090F182 /* XCRemoteSwiftPackageReference "ProgressHUD" */,
+			);
+			productRefGroup = 9B9B3A5B2A7A82410090F182 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B9B3A592A7A82410090F182 /* PrestoLabs */,
+				9B9B3A6F2A7A82460090F182 /* PrestoLabsTests */,
+				9B9B3A792A7A82460090F182 /* PrestoLabsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B9B3A582A7A82410090F182 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B9B3A6A2A7A82460090F182 /* LaunchScreen.storyboard in Resources */,
+				9B9B3A672A7A82460090F182 /* Assets.xcassets in Resources */,
+				9B9B3A652A7A82410090F182 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B9B3A6E2A7A82460090F182 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B30AF3B2A8284CB00001C9C /* TestTradeInitial.json in Resources */,
+				9B867B1D2A82FDEA005077F1 /* testOrderbook.json in Resources */,
+				9B30AF3D2A8285F400001C9C /* TestTradeInsert.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B9B3A782A7A82460090F182 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B9B3A562A7A82410090F182 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B9B3AA32A7D74D60090F182 /* RecentTradeViewController.swift in Sources */,
+				9B6C0EF72A82801500330E9E /* DataManager.swift in Sources */,
+				9B9B3A9A2A7C47230090F182 /* Constants.swift in Sources */,
+				9B9B3AA82A7FC01D0090F182 /* AppViewController.swift in Sources */,
+				9B9B3AAF2A8024E40090F182 /* OrderBookCell.swift in Sources */,
+				9B9B3A622A7A82410090F182 /* ViewController.swift in Sources */,
+				9B9B3AAD2A7FFA4A0090F182 /* OrderBookViewModel.swift in Sources */,
+				9B3A92602A81CC240073D8B0 /* RecentTradCollectionViewCell.swift in Sources */,
+				9B6C0EF12A82669B00330E9E /* RecentTrade.swift in Sources */,
+				9B3A925E2A81CBA50073D8B0 /* RecentTradeViewModel.swift in Sources */,
+				9B9B3AAB2A7FF1030090F182 /* OrderBook.swift in Sources */,
+				9B9B3AA12A7D749E0090F182 /* OrderBookViewController.swift in Sources */,
+				9B9B3A5E2A7A82410090F182 /* AppDelegate.swift in Sources */,
+				9B9B3A602A7A82410090F182 /* SceneDelegate.swift in Sources */,
+				9B9B3A922A7A86C70090F182 /* WebSocketConnection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B9B3A6C2A7A82460090F182 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B9B3A752A7A82460090F182 /* PrestoLabsTests.swift in Sources */,
+				9B3A925C2A81C6210073D8B0 /* TestTradeDataManager.swift in Sources */,
+				9B6498AA2A814091000CD3A5 /* TestOrderBookViewModel.swift in Sources */,
+				9B9B3A9C2A7C4FCE0090F182 /* TestWebSocketConnection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B9B3A762A7A82460090F182 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B9B3A7F2A7A82460090F182 /* PrestoLabsUITests.swift in Sources */,
+				9B9B3A812A7A82460090F182 /* PrestoLabsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9B9B3A722A7A82460090F182 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B9B3A592A7A82410090F182 /* PrestoLabs */;
+			targetProxy = 9B9B3A712A7A82460090F182 /* PBXContainerItemProxy */;
+		};
+		9B9B3A7C2A7A82460090F182 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B9B3A592A7A82410090F182 /* PrestoLabs */;
+			targetProxy = 9B9B3A7B2A7A82460090F182 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9B9B3A632A7A82410090F182 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B9B3A642A7A82410090F182 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9B9B3A682A7A82460090F182 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B9B3A692A7A82460090F182 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9B9B3A822A7A82460090F182 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9B9B3A832A7A82460090F182 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B9B3A852A7A82460090F182 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PrestoLabs/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = assignment.test.PrestoLabs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B9B3A862A7A82460090F182 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PrestoLabs/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = assignment.test.PrestoLabs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9B9B3A882A7A82460090F182 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = assignment.test.PrestoLabsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrestoLabs.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PrestoLabs";
+			};
+			name = Debug;
+		};
+		9B9B3A892A7A82460090F182 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = assignment.test.PrestoLabsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrestoLabs.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PrestoLabs";
+			};
+			name = Release;
+		};
+		9B9B3A8B2A7A82460090F182 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = assignment.test.PrestoLabsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PrestoLabs;
+			};
+			name = Debug;
+		};
+		9B9B3A8C2A7A82460090F182 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = assignment.test.PrestoLabsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PrestoLabs;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B9B3A552A7A82410090F182 /* Build configuration list for PBXProject "PrestoLabs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B9B3A822A7A82460090F182 /* Debug */,
+				9B9B3A832A7A82460090F182 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B9B3A842A7A82460090F182 /* Build configuration list for PBXNativeTarget "PrestoLabs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B9B3A852A7A82460090F182 /* Debug */,
+				9B9B3A862A7A82460090F182 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B9B3A872A7A82460090F182 /* Build configuration list for PBXNativeTarget "PrestoLabsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B9B3A882A7A82460090F182 /* Debug */,
+				9B9B3A892A7A82460090F182 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B9B3A8A2A7A82460090F182 /* Build configuration list for PBXNativeTarget "PrestoLabsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B9B3A8B2A7A82460090F182 /* Debug */,
+				9B9B3A8C2A7A82460090F182 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9B9B3A8D2A7A86A00090F182 /* XCRemoteSwiftPackageReference "Starscream" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/daltoniam/Starscream.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		9B9B3AA42A7FBFF70090F182 /* XCRemoteSwiftPackageReference "ProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/relatedcode/ProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9B9B3A8E2A7A86A00090F182 /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B9B3A8D2A7A86A00090F182 /* XCRemoteSwiftPackageReference "Starscream" */;
+			productName = Starscream;
+		};
+		9B9B3AA52A7FBFF70090F182 /* ProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B9B3AA42A7FBFF70090F182 /* XCRemoteSwiftPackageReference "ProgressHUD" */;
+			productName = ProgressHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9B9B3A522A7A82410090F182 /* Project object */;
+}

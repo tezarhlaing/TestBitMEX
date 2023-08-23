@@ -1,0 +1,38 @@
+{
+   "table":"trade",
+   "action":"partial",
+   "keys":[
+      
+   ],
+   "types":{
+      "timestamp":"timestamp",
+      "symbol":"symbol",
+      "side":"symbol",
+      "size":"long",
+      "price":"float",
+      "tickDirection":"symbol",
+      "trdMatchID":"guid",
+      "grossValue":"long",
+      "homeNotional":"float",
+      "foreignNotional":"float",
+      "trdType":"symbol"
+   },
+   "filter":{
+      "symbol":"XBTUSD"
+   },
+   "data":[
+      {
+         "timestamp":"2023-08-08T12:06:08.386Z",
+         "symbol":"XBTUSD",
+         "side":"Sell",
+         "size":2700,
+         "price":29364.5,
+         "tickDirection":"PlusTick",
+         "trdMatchID":"a6dcedb5-347d-f66a-da94-86a583424c80",
+         "grossValue":9194769,
+         "homeNotional":0.09194769,
+         "foreignNotional":2700.0,
+         "trdType":"Regular"
+      }
+   ]
+}
